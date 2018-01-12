@@ -40,7 +40,7 @@ public abstract class RepositoryBase<TEntity extends IHaveId> implements Reposit
 		update = connection.prepareStatement(updateSql());
 		delete = connection.prepareStatement(deleteSql());
 		selectAll = connection.prepareStatement(selectAllSql());
-		selectById = connection.prepareStatement(selectAllSql());
+		selectById = connection.prepareStatement(selectByIdSql());
 	}
 	
 	protected abstract String insertSql();
